@@ -3,16 +3,24 @@
   <head>
     <title>Project Kickoff</title>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="icon" href="imgs/Togepi-Origin.webp"/>
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+      h1 {
+        color: pink;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <header>
       <h1>ACM Projects Kickoff</h1>
       <hr>
-      <h3>Topic of Meeting</h3>
-      <p>Forming and Bonding with your new team</p>
-      <h3>Date of Meeting</h3>
-      <p>04/05/2024</p>
+      <h3 style="color:lightskyblue" class="headerTitle">Topic of Meeting</h3>
+      <p id="headerDesc">Forming and Bonding with your new team</p>
+      <h3 style="color:lightskyblue" class="headerTitle">Date of Meeting</h3>
+      <p id="headerDesc">04/05/2024</p>
       <hr>
     </header>
     <main>
@@ -28,72 +36,81 @@
         <div class="Attendance_list">
             <hr>
             <ol>
-                <li>Jasmine Nguyen</li>
-                <li>Marcus Thompson</li>
-                <li>Maya Patel</li>
-                <li>Gabriel Rodriguez</li>
-                <li>Olivia Li</li>
-                <li>Sebastian Gomez</li>
-                <li>Emily Kim</li>
-                <li>Ethan Martinez</li>
-                <li>Isabella Chen</li>
-                <li>Lucas Taylor</li>
-                <li>Ava Gupta</li>
-                <li>Noah Johnson</li>
-                <li>Sophia Lee</li>
-                <li>Xavier Hernandez</li>
-                <li>Mia Wang</li>
-                <li>Alexander Brown</li>
-                <li>Emma Kumar</li>
-                <li>Liam Garcia</li>
-                <li>Charlotte Singh</li>
-                <li>Benjamin Smith</li>
-                <li>Harper Jones</li>
-                <li>Jacob Nguyen</li>
-                <li>Amelia Patel</li>
-                <li>William Martinez</li>
-                <li>Evelyn Rodriguez</li>
-                <li>James Gupta</li>
-                <li>Abigail Wilson</li>
-                <li>Logan Kumar</li>
-                <li>Chloe Thomas</li>
-                <li>Daniel Thompson</li>
-                <li>Zoe White</li>
-                <li>Oliver Miller</li>
-                <li>Madison Williams</li>
-                <li>Henry Davis</li>
-                <li>Ella Martin</li>
-                <li>Michael Clark</li>
+              <li>Jasmine Nguyen</li>
+              <li>Marcus Thompson</li>
+              <li>Maya Patel</li>
+              <li>Gabriel Rodriguez</li>
+              <li>Olivia Li</li>
+              <li>Sebastian Gomez</li>
+              <li>Emily Kim</li>
+              <li>Ethan Martinez</li>
+              <li>Isabella Chen</li>
+              <li>Lucas Taylor</li>
+              <li>Ava Gupta</li>
+              <li>Noah Johnson</li>
+              <li>Sophia Lee</li>
+              <li>Xavier Hernandez</li>
+              <li>Mia Wang</li>
+              <li>Alexander Brown</li>
+              <li>Emma Kumar</li>
+              <li>Liam Garcia</li>
+              <li>Charlotte Singh</li>
+              <li>Benjamin Smith</li>
+              <li>Harper Jones</li>
+              <li>Jacob Nguyen</li>
+              <li>Amelia Patel</li>
+              <li>William Martinez</li>
+              <li>Evelyn Rodriguez</li>
+              <li>James Gupta</li>
+              <li>Abigail Wilson</li>
+              <li>Logan Kumar</li>
+              <li>Chloe Thomas</li>
+              <li>Daniel Thompson</li>
+              <li>Zoe White</li>
+              <li>Oliver Miller</li>
+              <li>Madison Williams</li>
+              <li>Henry Davis</li>
+              <li>Ella Martin</li>
+              <li>Michael Clark</li>
             </ol>
         </div>
         <hr>
       </section>
       <h2>Agenda</h2>
       <hr>
-      <ul>
+      <div id="gridContainer">
+        <ul>
           <li>Reveal teams</li>
+        </ul>
+        <ul>
           <li>Go over logistics and timeline</li>
+        </ul>
+        <ul>
           <li>Team bonding acitivity</li>
-      </ul>
+        </ul>
+      </div>
       <hr>
       <h2>Continued from previous meeting...</h2>
       <hr>
-      <ul>
+      <ul class="discuss">
           <li>Go over logistics and timeline</li>
       </ul>
       <hr>
       <h2>Topics to discuss...</h2>
       <hr>
-      <ul>
-          <li>Team responsibilities</li>
+      <ul class="discuss">
+          <li class="testListItem">Team responsibilities</li>
           <li>Code of conduct</li>
       </ul>
     </main>
     <hr>
     <h2>Image Gallery</h2>
     <hr>
-    <img src="imgs/apples.jpg" alt="pokemon eating apples"> <br>
-    <img src="imgs/emolga.jpg" alt="cute pic of emolga" width="1000">
+    <div id="imgGallery">
+      <img src="imgs/apples.jpg" alt="pokemon eating apples"> <br>
+      <img src="imgs/emolga.jpg" alt="cute pic of emolga" width="1000"><br>
+      <img src="imgs/emolga_and_pachurisu.jpg" alt="emolga and pachurisu playing together" width="1000">
+    </div>
     <hr>
     <h2>Audio Recording</h2>
     <hr>
@@ -110,16 +127,16 @@
     </video>
     <hr>
     <h2>Forms</h2>
-    <form>
+    <form class="discuss">
       <fieldset>
         <legend>Random Form</legend>
         <input type="text"><br>
         <input type="date"><br>
         <input type="radio"><br>
         <input type="checkbox"><br>
-        <textarea rows="10" cols="40">This is a textarea</textarea>
+        <textarea rows="10" cols="40">This is a textarea. Try clicking and holding on me.</textarea>
       </fieldset>
-      <label>Datalist</label>
+      <label id="labelAttr">Datalist</label>
       <input list="values">
       <datalist id="values">
         <option value="value 1">
@@ -127,7 +144,7 @@
         <option value="value 3">
       </datalist>
       <br>
-      <label for="poke">Select</label>
+      <label for="poke" id="labelAttr">Select</label>
       <select id="poke">
         <option value="pikachu">Pikachu</option>
         <option value="emolga">Emolga</option>
@@ -138,9 +155,10 @@
     </form>
     <hr>
     <footer>
-      <hr>
       <h2>Comments, Questions, Concerns</h2>
       <hr>
+      <p id="testBlock">Below me is a text that says "hello world" but it's invisible because display is set to none, except for when the screen width is less than or equal to 1024px.</p>
+      <p id="hideThis">hello world</p>
       <details>
           <summary>FAQ</summary>
           <span class="FAQ">
@@ -152,6 +170,7 @@
               <br>
               <em>On Discord</em>
           </span>
+          <p>boo</p>
       </details>
     </footer>
   </body>

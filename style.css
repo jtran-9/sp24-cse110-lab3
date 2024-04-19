@@ -1,0 +1,184 @@
+h1 {
+    background-color: var(--titleColor, aliceblue);
+}
+
+.headerTitle {
+    text-align: center;
+}
+
+.discuss > * {
+    color: lightgreen;
+}
+
+label[id="labelAttr"] {
+    color: crimson;
+}
+
+#headerDesc {
+    text-align: center;
+    font-size: 2em;
+}
+
+#testBlock {
+    display: block;
+}
+
+#hideThis {
+    display: none;
+}
+
+#gridContainer > ul {
+    text-align: left;
+    align-self: center;
+}
+
+#gridContainer {
+    display: grid;
+    grid-template-rows: [firstrow] 50px;
+    grid-template-columns: [firstCol] 25vw [secondCol] 25vw [thirdCol] 25vw [fourthCol] 25vw;
+}
+
+#imgGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 30px;
+}
+
+form.discuss > * {
+    color: cyan;
+}
+
+/* Styles all h2 headers */
+h2 {
+    color: lightskyblue;
+    font-size: 30px;
+    padding: 10px 10px 10px 30px
+}
+
+img {
+    border-color: lightpink;
+    border-width: 10px;
+    border-radius: 100px;
+    border-style: solid;
+    display: block;
+    max-width: 45vw;
+    max-height: 50vh;
+    height: 100vh;
+    display: inline;
+    position: static;
+}
+
+video {
+    width: 70vw;
+    height: 50vh;
+    margin-left: 2.5in;
+}
+
+audio {
+    margin-left: 180pt;
+    position: relative;
+    bottom: 30px;
+    right: 30px;
+}
+
+p {
+    color: rgb(63, 111, 255);
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+label {
+    color: #90e3ff
+}
+
+b {
+    color: color(srgb 0 1 0);
+}
+
+strong {
+    color: color-mix(in srgb, lightskyblue 50%, lightpink);
+}
+
+li, i {
+    color: hsl(302, 100%, 81%); 
+}
+
+ol li {
+    color: burlywood;
+}
+
+i {
+    text-decoration: underline;
+}
+
+h3 + p {
+    text-decoration: underline;
+}
+
+div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+b ~ em {
+    text-decoration: overline;
+}
+
+/* double check again to see if this is correct */
+span {
+    margin: 200px 200px 200px 200px;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+summary {
+    margin: auto;
+}
+
+button:hover {
+    color:hsl(302, 100%, 81%);
+    background-color: #90e3ff;
+}
+
+textarea:active {
+    background-color:rgb(63, 111, 255);
+}
+
+summary {
+    & ~ p {
+        background-color: #90e3ff;
+    }
+}
+
+li.testListItem:has(+ li) {
+    background-color: bisque;
+}
+
+@media screen and (max-width: 1024px) {
+    body > #imgGallery {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+        display: block;
+    }
+    #imgGallery > img {
+        max-width: 100vw;
+        width: 100vw;
+    }
+    img {
+        max-width: none;
+        max-height: none;
+        height: 100%;
+    }
+    #hideThis {
+        display: block;
+    }
+}
