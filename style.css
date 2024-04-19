@@ -134,7 +134,6 @@ b ~ em {
 span {
     margin: 200px 200px 200px 200px;
     font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
 }
@@ -153,7 +152,7 @@ textarea:active {
 }
 
 summary {
-    & ~ p {
+    ~ p {
         background-color: #90e3ff;
     }
 }
