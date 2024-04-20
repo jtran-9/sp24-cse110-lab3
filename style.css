@@ -95,11 +95,11 @@ label {
 }
 
 b {
-    color: color(srgb 0 1 0);
+    background-color: color(srgb 255 0 255); /* Magenta */
 }
 
 strong {
-    color: color-mix(in srgb, lightskyblue 50%, lightpink);
+    color: color-mix(in srgb, lightskyblue 50%, lightpink 50%);
 }
 
 li, i {
@@ -151,7 +151,7 @@ textarea:active {
     background-color:rgb(63, 111, 255);
 }
 
-summary {
+p {
     ~ p {
         background-color: #90e3ff;
     }
